@@ -1,0 +1,79 @@
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.header {
+    background-color: #0c7bea;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 0 0 10px 10px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.main-content {
+    flex-grow: 1;
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.jumbotron {
+    background-color: #a259bf;
+    color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    height: 45vh;
+    width: auto;
+}
+
+.jumbotron h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 8px;
+}
+
+.lead {
+    font-size: 1.5rem;
+    font-weight: 350;
+}
+
+#usernameInput {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#searchBtn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.repo-card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.repo-card:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    background-color: #026fdc;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: auto;
+}

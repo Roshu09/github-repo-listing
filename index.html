@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Explorer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>EASYWORK</h1>
+        </div>
+    </div>
+
+    <div class="container mt-3 main-content">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">GitHub Explorer</h1>
+            <p class="lead">Explore public repositories for a GitHub user</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form id="githubForm">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="usernameInput" placeholder="Enter GitHub username"
+                            required>
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" id="searchBtn" type="submit">Search Repositories</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="repoList" class="row">
+        </div>
+
+        <div id="loader" class="text-center" style="display: none;">
+            <div class="spinner-border text-primary" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <p>Loading repositories...</p>
+        </div>
+
+        <div id="paginationContainer">
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p>&copy; 2024 EASYWORK. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
